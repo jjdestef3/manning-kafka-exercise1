@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Internal Server Error - Error handling a925de58-767b-4915-ba22-a647adbf1440-1, org.jboss.resteasy.spi.UnhandledException: java.lang.NoClassDefFoundError: com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt</title>
+    <meta charset="utf-8">
+    <style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: #f9f9f9;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.content {
+    padding: 1em 0 1em 0;
+}
+
+header, .component-name {
+    background-color: #ad1c1c;
+}
+
+ul {
+    line-height: 1.5rem;
+    margin: 0.25em 0 0.25em 0;
+}
+
+.exception-message {
+    background: #be2828;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    line-height: 3.75rem;
+    font-weight: 700;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding: 0.4rem 0rem 0.4rem 0rem;
+}
+
+.intro {    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0.25em 0 1em 0;
+}
+h3 {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: #555;
+    margin: 0.25em 0 0.25em 0;
+}
+
+.trace, .resources {
+    background: #fff;
+    padding: 15px;
+    margin: 15px auto;
+    border: 1px solid #ececec;
+}
+.trace {
+    overflow-y: scroll;
+}
+.hidden {
+   display: none;
+}
+
+pre {
+    white-space: pre;
+    font-family: Consolas, Monaco, Menlo, "Ubuntu Mono", "Liberation Mono", monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+}
+</style>
+<script>
+	function toggleStackTraceOrder() {
+		var stElement = document.getElementById('stacktrace');
+		var current = stElement.getAttribute('data-current-setting');
+		if (current == 'original-stacktrace') {
+			var reverseOrder = document.getElementById('reversed-stacktrace');
+			stElement.innerHTML = reverseOrder.innerHTML;
+			stElement.setAttribute('data-current-setting', 'reversed-stacktrace');
+		} else {
+			var originalOrder = document.getElementById('original-stacktrace');
+			stElement.innerHTML = originalOrder.innerHTML;
+			stElement.setAttribute('data-current-setting', 'original-stacktrace');
+		}
+		return;
+	}
+	function showDefaultStackTraceOrder() {
+		var reverseOrder = document.getElementById('reversed-stacktrace');
+		var stElement = document.getElementById('stacktrace');
+       if (reverseOrder == null || stElement == null) {
+           return;
+       }
+		// default to reverse ordered stacktrace
+		stElement.innerHTML = reverseOrder.innerHTML;
+		stElement.setAttribute('data-current-setting', 'reversed-stacktrace');
+		return;
+	}
+</script>
+</head>
+<body  onload="showDefaultStackTraceOrder()">
+<header>
+    <h1 class="container">Internal Server Error</h1>
+    <div class="exception-message">
+        <h2 class="container">Error handling a925de58-767b-4915-ba22-a647adbf1440-1, org.jboss.resteasy.spi.UnhandledException: java.lang.NoClassDefFoundError: com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt</h2>
+    </div>
+</header>
+<div class="container content">
+    <div id="original-stacktrace" class="trace hidden">
+<p><em><a href="" onClick="toggleStackTraceOrder(); return false;">Click Here</a> to see the stacktrace in reversed  order (root-cause first)</em></p>        <pre>org.jboss.resteasy.spi.UnhandledException: java.lang.NoClassDefFoundError: com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Caused by: java.lang.NoClassDefFoundError: com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt
+	at com.jdallc.manning.exercide1.core.usecases.ProcessEventuC.processEvent(ProcessEventUC.kt:28)
+	at com.jdallc.manning.exercide1.core.usecases.ProcessEventuC_ClientProxy.processEvent(ProcessEventuC_ClientProxy.zig:185)
+	at com.jdallc.manning.exercide1.api.ProcessEvents.processEvent(ProcessEvents.kt:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	... 20 more
+Caused by: java.lang.ClassNotFoundException: com.jdallc.manning.exercide1.core.usecases.ProcessEventUCKt
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:412)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:365)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:412)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:365)
+	... 38 more</pre>
+    </div>
+    <div id="reversed-stacktrace" class="trace hidden">
+<p><em>The stacktrace below has been reversed to show the root cause first. <a href="" onClick="toggleStackTraceOrder(); return false;">Click Here</a> to see the original stacktrace</em></p>        <pre>java.lang.ClassNotFoundException: com.jdallc.manning.exercide1.core.usecases.ProcessEventUCKt
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:412)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:365)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:412)
+	at io.quarkus.bootstrap.classloading.QuarkusClassLoader.loadClass(QuarkusClassLoader.java:365)
+	at com.jdallc.manning.exercide1.core.usecases.ProcessEventuC.processEvent(ProcessEventUC.kt:28)
+	at com.jdallc.manning.exercide1.core.usecases.ProcessEventuC_ClientProxy.processEvent(ProcessEventuC_ClientProxy.zig:185)
+	at com.jdallc.manning.exercide1.api.ProcessEvents.processEvent(ProcessEvents.kt:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:167)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:130)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.internalInvokeOnTarget(ResourceMethodInvoker.java:638)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTargetAfterFilter(ResourceMethodInvoker.java:504)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.lambda$invokeOnTarget$2(ResourceMethodInvoker.java:454)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:456)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:417)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:391)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:68)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:488)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$invoke$4(SynchronousDispatcher.java:259)
+	at org.jboss.resteasy.core.SynchronousDispatcher.lambda$preprocess$0(SynchronousDispatcher.java:160)
+	at org.jboss.resteasy.core.interception.jaxrs.PreMatchContainerRequestContext.filter(PreMatchContainerRequestContext.java:364)
+	at org.jboss.resteasy.core.SynchronousDispatcher.preprocess(SynchronousDispatcher.java:163)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:245)
+	at io.quarkus.resteasy.runtime.standalone.RequestDispatcher.service(RequestDispatcher.java:73)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.dispatch(VertxRequestHandler.java:131)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler.access$000(VertxRequestHandler.java:37)
+	at io.quarkus.resteasy.runtime.standalone.VertxRequestHandler$1.run(VertxRequestHandler.java:94)
+	at io.quarkus.runtime.CleanableExecutor$CleaningRunnable.run(CleanableExecutor.java:231)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2046)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1578)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1452)
+	at org.jboss.threads.DelegatingRunnable.run(DelegatingRunnable.java:29)
+	at org.jboss.threads.ThreadLocalResettingRunnable.run(ThreadLocalResettingRunnable.java:29)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:479)
+Resulted in: java.lang.NoClassDefFoundError: com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt
+	... 38 more
+Resulted in: org.jboss.resteasy.spi.UnhandledException: java.lang.NoClassDefFoundError: com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:106)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:372)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:216)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:515)
+	... 20 more</pre>
+    </div>
+<div id="stacktrace"></div></div></body>
+</html>

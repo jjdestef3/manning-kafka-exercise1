@@ -1,0 +1,22 @@
+POST http://localhost:8080/events/process
+Content-Type: application/json
+
+{
+  "test": "Test"
+}
+
+<> 2020-10-09T111933.200.json
+
+###
+
+POST http://localhost:8080/events/process
+Content-Type: application/json
+
+{
+  "test": "Test"
+}
+
+<> 2020-10-09T111825.500.html
+
+###
+
