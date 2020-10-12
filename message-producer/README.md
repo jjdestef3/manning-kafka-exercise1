@@ -1,17 +1,48 @@
-# code-with-quarkus project
+## Message Producer
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 
-## Running the application in dev mode
+### Purpose
+1. Ingest events from event producer via HTTP
+2. Put ingested events to a Kafka topic 
 
+### To Do's
+1. Develop tests
+2. Investigate more performant message production (KafkaProducer) 
+
+### Running the application in dev mode
+Before you run dev mode start the Kafka broker. You can use the docker-compose
+script in the scripts directory and the parent root of this project:
+```
+docker-compose -f kafka-zookeeper-compose.yml up
+```
+ 
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
 ```
 
-## Packaging and running the application
+After the application is running in dev mode start the event generator by
+executing the events.sh script from the scripts directory:
+```
+./events.sh
+```
+
+Messages will start to accumulate on the events topic in Kafka. You can view them
+with various tools like KaDeck Desktop (https://www.getkadeck.com/#/?tab=desktop).
+
+To stop the events ctrl-c in the events shell terminal. To shut down the 
+Kafka broker ctrl-c in the terminal where you started the broker or from
+a different terminal:
+```
+docker-compose -f kafka-zookeeper-compose.yml stop
+``` 
+
+### Options to package the application for deployment
+
+#### Packaging and running the application
 
 The application can be packaged using:
 ```shell script
@@ -26,7 +57,7 @@ If you want to build an _?ber-jar_, just add the `--uber-jar` option to the comm
 
 The application is now runnable using `java -jar target/code-with-quarkus-1.0.0-SNAPSHOT-runner.jar`.
 
-## Creating a native executable
+#### Creating a native executable
 
 You can create a native executable using: 
 ```shell script
@@ -41,9 +72,5 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.html.
-
-# RESTEasy JAX-RS
-
-Guide: https://quarkus.io/guides/rest-json
 
 
