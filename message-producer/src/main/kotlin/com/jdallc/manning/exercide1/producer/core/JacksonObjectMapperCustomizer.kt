@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.core
+package com.jdallc.manning.exercide1.producer.core
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.SerializationFeature

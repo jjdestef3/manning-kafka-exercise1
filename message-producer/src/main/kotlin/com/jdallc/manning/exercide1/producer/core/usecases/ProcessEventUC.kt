@@ -1,11 +1,11 @@
-package com.jdallc.manning.exercide1.core.usecases
+package com.jdallc.manning.exercide1.producer.core.usecases
 
-import com.jdallc.manning.exercide1.core.domain.exceptions.MessageProcessingException
-import com.jdallc.manning.exercide1.core.domain.model.EventRequest
-import com.jdallc.manning.exercide1.core.domain.model.EventResponse
-import com.jdallc.manning.exercide1.core.domain.model.EventResponseEnum
-import com.jdallc.manning.exercide1.core.ports.api.IProcessEventUC
-import com.jdallc.manning.exercide1.datasources.SaveMessgeToKafkaa
+import com.jdallc.manning.exercide1.producer.core.domain.exceptions.MessageProcessingException
+import com.jdallc.manning.exercide1.producer.core.domain.model.EventRequest
+import com.jdallc.manning.exercide1.producer.core.domain.model.EventResponse
+import com.jdallc.manning.exercide1.producer.core.domain.model.EventResponseEnum
+import com.jdallc.manning.exercide1.producer.core.ports.api.IProcessEventUC
+import com.jdallc.manning.exercide1.producer.datasources.SaveMessgeToKafkaa
 import mu.KotlinLogging
 import javax.enterprise.context.ApplicationScoped
 import javax.enterprise.inject.Default

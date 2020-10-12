@@ -1,6 +1,6 @@
-package com.jdallc.manning.exercide1.api.exceptionmappings
+package com.jdallc.manning.exercide1.producer.api.exceptionmappings
 
-import com.jdallc.manning.exercide1.core.domain.exceptions.MessageProcessingException
+import com.jdallc.manning.exercide1.producer.core.domain.exceptions.MessageProcessingException
 import mu.KLogging
 import javax.ws.rs.core.Response
 import javax.ws.rs.ext.ExceptionMapper

@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.api.exceptionmappings
+package com.jdallc.manning.exercide1.producer.api.exceptionmappings
 
 import io.quarkus.runtime.annotations.RegisterForReflection
 

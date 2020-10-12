@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.api.exceptionmappings
+package com.jdallc.manning.exercide1.producer.api.exceptionmappings
 
 import java.io.PrintWriter
 import java.io.StringWriter

@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.core.domain.exceptions
+package com.jdallc.manning.exercide1.producer.core.domain.exceptions
 
 /**
  * Responsibility: </br>

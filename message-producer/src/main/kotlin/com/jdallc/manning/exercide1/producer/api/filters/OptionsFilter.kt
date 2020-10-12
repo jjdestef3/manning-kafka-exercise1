@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.api.filters
+package com.jdallc.manning.exercide1.producer.api.filters
 
 import javax.ws.rs.container.ContainerRequestContext
 import javax.ws.rs.container.ContainerRequestFilter

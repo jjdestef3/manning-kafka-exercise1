@@ -1,9 +1,9 @@
-package com.jdallc.manning.exercide1.datasources
+package com.jdallc.manning.exercide1.producer.datasources
 
-import com.jdallc.manning.exercide1.core.Config
-import com.jdallc.manning.exercide1.core.domain.model.EventRequest
-import com.jdallc.manning.exercide1.core.domain.model.MessageProcessingResult
-import com.jdallc.manning.exercide1.core.ports.datasources.ISaveMessage
+import com.jdallc.manning.exercide1.producer.core.Config
+import com.jdallc.manning.exercide1.producer.core.domain.model.EventRequest
+import com.jdallc.manning.exercide1.producer.core.domain.model.MessageProcessingResult
+import com.jdallc.manning.exercide1.producer.core.ports.datasources.ISaveMessage
 import mu.KotlinLogging
 import org.apache.kafka.clients.producer.KafkaProducer
 import org.apache.kafka.clients.producer.ProducerRecord

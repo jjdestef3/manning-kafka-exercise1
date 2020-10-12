@@ -1,6 +1,6 @@
-package com.jdallc.manning.exercide1.api.health
+package com.jdallc.manning.exercide1.producer.api.health
 
-import com.jdallc.manning.exercide1.core.Config
+import com.jdallc.manning.exercide1.producer.core.Config
 import org.eclipse.microprofile.health.HealthCheck
 import org.eclipse.microprofile.health.HealthCheckResponse
 import org.eclipse.microprofile.health.Liveness

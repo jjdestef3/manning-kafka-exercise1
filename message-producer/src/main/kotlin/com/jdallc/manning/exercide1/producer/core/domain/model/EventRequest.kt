@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.core.domain.model
+package com.jdallc.manning.exercide1.producer.core.domain.model
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import io.quarkus.runtime.annotations.RegisterForReflection

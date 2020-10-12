@@ -1,8 +1,8 @@
-package com.jdallc.manning.exercide1.api
+package com.jdallc.manning.exercide1.producer.api
 
-import com.jdallc.manning.exercide1.core.domain.model.EventRequest
-import com.jdallc.manning.exercide1.core.domain.model.EventResponse
-import com.jdallc.manning.exercide1.core.ports.api.IProcessEventUC
+import com.jdallc.manning.exercide1.producer.core.domain.model.EventRequest
+import com.jdallc.manning.exercide1.producer.core.domain.model.EventResponse
+import com.jdallc.manning.exercide1.producer.core.ports.api.IProcessEventUC
 import javax.enterprise.inject.Default
 import javax.inject.Inject
 import javax.ws.rs.*

@@ -1,4 +1,4 @@
-package com.jdallc.manning.exercide1.core
+package com.jdallc.manning.exercide1.producer.core
 
 import io.quarkus.arc.config.ConfigProperties
 
