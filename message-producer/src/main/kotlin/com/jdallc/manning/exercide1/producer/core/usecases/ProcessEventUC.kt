@@ -5,13 +5,15 @@ import com.jdallc.manning.exercide1.producer.core.domain.model.EventRequest
 import com.jdallc.manning.exercide1.producer.core.domain.model.EventResponse
 import com.jdallc.manning.exercide1.producer.core.domain.model.EventResponseEnum
 import com.jdallc.manning.exercide1.producer.core.ports.api.IProcessEventUC
-import com.jdallc.manning.exercide1.producer.datasources.SaveMessgeToKafkaa
+import com.jdallc.manning.exercide1.producer.core.ports.datasources.ISaveMessage
 import mu.KotlinLogging
 import javax.enterprise.context.ApplicationScoped
 import javax.enterprise.inject.Default
 import javax.inject.Inject
 
-// File logger
+/**
+ * File Logger
+ */
 private val logger = KotlinLogging.logger {}
 
 /**
@@ -26,7 +28,7 @@ class ProcessEventuC : IProcessEventUC {
 
     @Inject
     @field: Default
-    lateinit var saveMessage: SaveMessgeToKafkaa
+    lateinit var saveMessage: ISaveMessage
 
     /**
      * Process event

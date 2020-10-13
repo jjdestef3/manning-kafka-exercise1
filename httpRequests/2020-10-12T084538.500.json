@@ -1,0 +1,1 @@
+{"errType":"com.jdallc.manning.exercise1.consumer.core.domain.exceptions.MessageProcessingException","cause":"","code":500,"errMsg":"Record for ID= 1 not found","trace":null}

@@ -5,275 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ee2bf7-c709-4afd-8877-69ff03a9d80b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/domain/exceptions/MessageProcessingException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/domain/model/MessageProcessingResult.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/ports/datasources/ISaveMessage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/datasources/SaveMessage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/codeStyles" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/httpRequests/2020-10-09T111825.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/httpRequests/2020-10-09T111933.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/httpRequests/http-client.cookies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_github_fge_btf_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_github_fge_jackson_coreutils_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_github_fge_json_patch_1_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_github_fge_msg_simple_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_google_inject_guice_no_aop_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_ibm_async_asyncutil_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__commons_io_commons_io_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_github_microutils_kotlin_logging_1_7_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_buffer_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_codec_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_common_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_handler_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_resolver_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_netty_netty_transport_4_1_49_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_arc_arc_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_gizmo_gizmo_1_0_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_arc_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_bootstrap_app_model_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_bootstrap_core_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_bootstrap_gradle_resolver_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_bootstrap_maven_resolver_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_bootstrap_runner_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_builder_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_config_yaml_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_core_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_core_deployment_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_development_mode_spi_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_devtools_utilities_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_ide_launcher_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_jackson_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_jsonp_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_jsonp_deployment_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_junit5_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_kafka_client_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_kotlin_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_logging_json_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_mutiny_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_netty_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_common_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_jackson_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_resteasy_server_common_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_security_runtime_spi_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_smallrye_context_propagation_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_smallrye_health_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_test_common_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_vertx_core_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_quarkus_vertx_http_1_8_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_quarkus_security_quarkus_security_1_1_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_rest_assured_json_path_4_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_rest_assured_kotlin_extensions_4_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_rest_assured_rest_assured_4_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_rest_assured_rest_assured_common_4_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_rest_assured_xml_path_4_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_common_smallrye_common_annotation_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_common_smallrye_common_constraint_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_common_smallrye_common_expression_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_common_smallrye_common_function_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_common_smallrye_common_io_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_config_smallrye_config_1_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_config_smallrye_config_common_1_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_config_smallrye_config_source_yaml_1_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_reactive_mutiny_0_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_reactive_mutiny_context_propagation_0_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_smallrye_context_propagation_1_0_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_smallrye_context_propagation_api_1_0_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_smallrye_health_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_smallrye_health_api_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_smallrye_health_provided_checks_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_smallrye_smallrye_health_ui_2_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_vertx_vertx_auth_common_3_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_vertx_vertx_bridge_common_3_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_vertx_vertx_core_3_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_vertx_vertx_web_3_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__io_vertx_vertx_web_common_3_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_el_jakarta_el_api_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_enterprise_jakarta_enterprise_cdi_api_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_interceptor_jakarta_interceptor_api_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_builder_support_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_core_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_embedder_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_model_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_resolver_provider_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_settings_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_api_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_connector_basic_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_impl_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_spi_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_transport_wagon_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_resolver_maven_resolver_util_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_3_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_3_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_3_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_3_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apache_sling_org_apache_sling_javax_activation_0_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_groovy_groovy_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_3_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_2_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_eclipse_microprofile_config_microprofile_config_api_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_eclipse_microprofile_context_propagation_microprofile_context_propagation_api_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_eclipse_microprofile_health_microprofile_health_api_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_inject_0_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_eclipse_sisu_org_eclipse_sisu_plexus_0_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_glassfish_jakarta_json_1_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_3_b02.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_3_b02.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_graalvm_sdk_graal_sdk_20_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_jandex_2_2_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_logging_commons_logging_jboss_logging_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_2_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_logmanager_jboss_logmanager_embedded_1_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_resteasy_resteasy_core_4_5_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_resteasy_resteasy_core_spi_4_5_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jackson2_provider_4_5_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_resteasy_resteasy_jaxb_provider_4_5_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_slf4j_slf4j_jboss_logging_1_2_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_spec_javax_ws_rs_jboss_jaxrs_api_2_1_spec_2_0_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_spec_javax_xml_bind_jboss_jaxb_api_2_3_spec_2_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jboss_threads_jboss_threads_3_1_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_72.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_jsoup_jsoup_1_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_lz4_lz4_java_1_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_ow2_asm_asm_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_ow2_asm_asm_analysis_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_ow2_asm_asm_tree_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_ow2_asm_asm_util_8_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_wildfly_common_wildfly_common_1_5_4_Final_format_001.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/manning-exercise-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/manning-exercise-1-message-producer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/docker/Dockerfile.fast-jar" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/docker/Dockerfile.fast-jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/docker/Dockerfile.jvm" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/docker/Dockerfile.native" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/docker/Dockerfile.native" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/api/ProcessEvents.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/api/ProcessEvents.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/api/exceptionmappings/Extension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/api/exceptionmappings/Extension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/api/filters/OptionsFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/api/filters/OptionsFilter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/api/health/HealthProbes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/api/health/HealthProbes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/core/Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/Config.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/core/JacksonObjectMapperCustomizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/JacksonObjectMapperCustomizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/core/domain/model/EventRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/domain/model/EventRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/core/domain/model/EventResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/domain/model/EventResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/core/ports/api/IProcessEventUC.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/ports/api/IProcessEventUC.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercide1/core/usecases/ProcessEventUC.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/core/usecases/ProcessEventUC.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/test/kotlin/org/acme/resteasy/ExampleResourceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/test/kotlin/org/acme/resteasy/ExampleResourceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/src/test/kotlin/org/acme/resteasy/NativeExampleResourceIT.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/test/kotlin/org/acme/resteasy/NativeExampleResourceIT.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/META-INF/manning-exercise-1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/ProcessEvents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorMapper$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorMapper$toResponse$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/exceptionmappings/ErrorResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/exceptionmappings/ExtensionKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/filters/OptionsFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/api/health/HealthProbes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/JacksonObjectMapperCustomizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/domain/model/EventRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/domain/model/EventResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/domain/model/EventResponseEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/ports/api/IProcessEventUC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt$logger$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/usecases/ProcessEventUCKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/usecases/ProcessEventuC$processEvent$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/classes/com/jdallc/manning/exercide1/core/usecases/ProcessEventuC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/target/quarkus/bootstrap/dev-app-model.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/tools/event-generators-1.1-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/tools/event-generators-1.1-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/tools/events.sh" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/tools/events.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/tools/kafka-zookeeper-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/tools/kafka-zookeeper-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/tools/postgres-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/tools/postgres-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/message-consumer/tools/pricing.sh" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/tools/pricing.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/AppLifeCycleHook.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/api/exceptionmappings/ErrorMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/api/exceptionmappings/ErrorResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/api/exceptionmappings/Extension.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/api/filters/OptionsFilter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/api/health/HealthProbes.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/Config.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/JacksonObjectMapperCustomizer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/KafkaConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/domain/exceptions/MessageProcessingException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/domain/model/EventRequestDeserializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/ports/api/IEventConsumerUC.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/ports/api/IRetrieveEventUC.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/ports/datasources/IGetRecordById.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/ports/datasources/ISaveEventMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/usecases/EventConsumerUC.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/core/usecases/RetrieveEventUC.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/datasources/db/GetRecord.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/datasources/db/SaveEventMessage.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/datasources/db/model/EventRequestEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/core/domain/model/EventRequestDeserializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/core/domain/model/EventRequestSerializer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/datasources/kafka/KafkaConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manning-livecode-kafka-streaming-exercise1.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/manning-livecode-kafka-streaming-exercise1.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manning-livecode-kafka-streaming-exercise1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/manning-livecode-kafka-streaming-exercise1.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-producer/manning-exercise-1-producer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/manning-exercise-1-producer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/api/exceptionmappings/Extension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/api/exceptionmappings/Extension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/core/usecases/ProcessEventUC.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/core/usecases/ProcessEventUC.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/datasources/SaveMessageToKafka.kt" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/datasources/kafka/SaveMessageToKafka.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/message-producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/message-producer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,8 +54,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Interface" />
+        <option value="Interface" />
+        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -320,6 +87,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/core/domain/model" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -335,7 +103,110 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/datasources/kafka" />
+      <recent name="$PROJECT_DIR$/message-consumer/src/main/resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jdallc.manning.exercise1.consumer.code" />
+      <recent name="com.jdallc.manning.exercide1.producer" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.jdallc.manning.exercide1.producer.datasources.kafka" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.jdallc.manning.exercise1.consumer.core.domain.model" />
+      <recent name="com.jdallc.manning.exercise1.consumer.core" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/message-producer/src/main/kotlin/com/jdallc/manning/exercide1/producer/core/domain/model" />
+      <recent name="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer" />
+      <recent name="$PROJECT_DIR$/message-consumer/src/main/kotlin/com/jdallc/manning/exercise1/consumer/code" />
+      <recent name="$PROJECT_DIR$/message-producer" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9090/manning/exercise1/db-requests/process/7" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9090/manning/exercise1/db-requests/process/3" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9090/manning/exercise1/db-requests/process/2" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9090/manning/exercise1/db-requests/process/1" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Remote.message-consumer">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="manning#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/manning.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="manning-exercise-1-message-producer" />
       <option name="VM_PARAMETERS" />
@@ -383,6 +254,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="message-consumer" type="Remote">
+      <module name="manning-exercise-1-consumer" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="15005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="15005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.manning#1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -398,33 +288,105 @@
       <workItem from="1602421794131" duration="53000" />
       <workItem from="1602421913680" duration="131000" />
       <workItem from="1602422061220" duration="9808000" />
+      <workItem from="1602490408132" duration="18058000" />
+      <workItem from="1602544301227" duration="5892000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated README.md">
+      <created>1602492576163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602492576163</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="262" y="23" key="#Project_Structure" timestamp="1602421700620">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="262" y="23" key="#Project_Structure/0.23.1680.982@0.23.1680.982" timestamp="1602421700620" />
-    <state x="527" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1602422296939">
-      <screen x="0" y="23" width="1680" height="982" />
+    <state x="334" y="188" width="1204" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602549840845">
+      <screen x="0" y="23" width="1680" height="981" />
     </state>
-    <state x="527" y="187" key="#com.intellij.ide.util.MemberChooser/0.23.1680.982@0.23.1680.982" timestamp="1602422296939" />
+    <state x="334" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.981@0.23.1680.981" timestamp="1602549840845" />
+    <state x="334" y="189" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1602536793169" />
+    <state x="334" y="189" width="1204" height="690" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602538303102" />
+    <state x="527" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1602547682522">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="527" y="187" key="#com.intellij.ide.util.MemberChooser/0.23.1680.981@0.23.1680.981" timestamp="1602547682522" />
+    <state x="527" y="187" key="#com.intellij.ide.util.MemberChooser/0.23.1680.982@0.23.1680.982" timestamp="1602499626956" />
+    <state x="527" y="188" key="#com.intellij.ide.util.MemberChooser/0.23.1680.986@0.23.1680.986" timestamp="1602532713232" />
+    <state x="527" y="188" key="#com.intellij.ide.util.MemberChooser/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602542304241" />
     <state x="443" y="125" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1602421813924">
       <screen x="0" y="23" width="1680" height="982" />
     </state>
     <state x="443" y="125" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1680.982@0.23.1680.982" timestamp="1602421813924" />
+    <state x="0" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1602495327537">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="0" y="450" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.982@0.23.1680.982" timestamp="1602495327537" />
+    <state x="425" y="399" width="1110" height="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1602495339941">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="425" y="399" width="1110" height="265" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.23.1680.982@0.23.1680.982" timestamp="1602495339941" />
+    <state x="547" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602535273779">
+      <screen x="0" y="23" width="1680" height="985" />
+    </state>
+    <state x="547" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602535273779" />
+    <state x="408" y="291" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1602500371128">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="408" y="291" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.23.1680.982@0.23.1680.982" timestamp="1602500371128" />
+    <state x="83" y="23" width="1414" height="982" key="CommitChangelistDialog2" timestamp="1602492575896">
+      <screen x="0" y="23" width="1680" height="982" />
+    </state>
+    <state x="83" y="23" width="1414" height="982" key="CommitChangelistDialog2/0.23.1680.982@0.23.1680.982" timestamp="1602492575896" />
+    <state width="1507" height="403" key="GridCell.Tab.0.bottom" timestamp="1602550182510">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1507" height="403" key="GridCell.Tab.0.bottom/0.23.1680.981@0.23.1680.981" timestamp="1602550182510" />
+    <state width="1507" height="523" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1602543488083" />
+    <state width="1507" height="523" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602542878567" />
+    <state width="1507" height="403" key="GridCell.Tab.0.center" timestamp="1602550182509">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1507" height="403" key="GridCell.Tab.0.center/0.23.1680.981@0.23.1680.981" timestamp="1602550182509" />
+    <state width="1507" height="523" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1602543488066" />
+    <state width="1507" height="523" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602542878565" />
+    <state width="1507" height="403" key="GridCell.Tab.0.left" timestamp="1602550182508">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1507" height="403" key="GridCell.Tab.0.left/0.23.1680.981@0.23.1680.981" timestamp="1602550182508" />
+    <state width="1507" height="523" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1602543488063" />
+    <state width="1507" height="523" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602542878565" />
+    <state width="1507" height="403" key="GridCell.Tab.0.right" timestamp="1602550182509">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state width="1507" height="403" key="GridCell.Tab.0.right/0.23.1680.981@0.23.1680.981" timestamp="1602550182509" />
+    <state width="1507" height="523" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.984@0.23.1680.984" timestamp="1602543488080" />
+    <state width="1507" height="523" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.985@0.23.1680.985" timestamp="1602542878566" />
     <state x="167" y="83" key="SettingsEditor" timestamp="1602443528155">
       <screen x="0" y="23" width="1680" height="985" />
     </state>
     <state x="167" y="83" key="SettingsEditor/0.23.1680.985@0.23.1680.985" timestamp="1602443528155" />
-    <state x="371" y="23" width="838" height="1036" key="search.everywhere.popup" timestamp="1602464700228">
-      <screen x="0" y="23" width="1680" height="985" />
+    <state x="290" y="209" key="Vcs.Push.Dialog.v2" timestamp="1602492579076">
+      <screen x="0" y="23" width="1680" height="982" />
     </state>
-    <state x="371" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1602440291336" />
+    <state x="290" y="209" key="Vcs.Push.Dialog.v2/0.23.1680.982@0.23.1680.982" timestamp="1602492579076" />
+    <state x="371" y="23" width="838" height="1031" key="search.everywhere.popup" timestamp="1602548551935">
+      <screen x="0" y="23" width="1680" height="981" />
+    </state>
+    <state x="371" y="23" width="838" height="1031" key="search.everywhere.popup/0.23.1680.981@0.23.1680.981" timestamp="1602548551935" />
+    <state x="371" y="23" width="838" height="1032" key="search.everywhere.popup/0.23.1680.982@0.23.1680.982" timestamp="1602492342149" />
     <state x="371" y="23" width="838" height="1036" key="search.everywhere.popup/0.23.1680.985@0.23.1680.985" timestamp="1602464700228" />
   </component>
 </project>

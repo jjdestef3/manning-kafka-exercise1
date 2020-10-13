@@ -1,0 +1,47 @@
+GET http://localhost:9090/manning/exercise1/db-requests/process/7
+Accept: application/json
+
+<> 2020-10-12T084719.200.json
+
+###
+
+GET http://localhost:9090/manning/exercise1/db-requests/process/3
+Accept: application/json
+
+<> 2020-10-12T084705.200.json
+
+###
+
+GET http://localhost:9090/manning/exercise1/db-requests/process/2
+Accept: application/json
+
+<> 2020-10-12T084657.200.json
+
+###
+
+GET http://localhost:9090/manning/exercise1/db-requests/process/1
+Accept: application/json
+
+<> 2020-10-12T084643.200.json
+
+###
+
+GET http://localhost:9090/manning/exercise1/db-requests/process/1
+Accept: application/json
+
+<> 2020-10-12T084538.500.json
+
+###
+
+GET http://localhost:9090/manning/exercise1/db-requests/process/1
+Accept: application/json
+
+<> 2020-10-12T083754.500.json
+
+###
+
+GET http://localhost:9090/manning/exercise1/db-requests/process/1
+Accept: application/json
+
+###
+
