@@ -85,6 +85,15 @@
             <artifactId>quarkus-kafka-client</artifactId>
         </dependency>
         <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-kafka-client</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>io.quarkus</groupId>-->
+<!--            <artifactId>quarkus-smallrye-reactive-messaging-kafka</artifactId>-->
+<!--        </dependency>-->
+        <dependency>
             <groupId>io.confluent</groupId>
             <artifactId>kafka-json-serializer</artifactId>
             <version>${kafka.json.serializer.version}</version>

@@ -1,5 +1,8 @@
 package com.jdallc.manning.exercise1.consumer.core.ports.api
 
+import com.jdallc.manning.exercise1.consumer.core.domain.model.EventRequest
+import org.apache.kafka.clients.consumer.ConsumerRecord
+
 
 /**
  * Responsibility: </br>
@@ -9,5 +12,7 @@ package com.jdallc.manning.exercise1.consumer.core.ports.api
  * Date: 10/12/20
  */
 interface IEventConsumerUC {
-    fun consumeMessage()
+    fun consumeMessage() = Unit
+    fun shutdown() = Unit
+    fun processKafkaMessage(record: EventRequest) = Unit
 }

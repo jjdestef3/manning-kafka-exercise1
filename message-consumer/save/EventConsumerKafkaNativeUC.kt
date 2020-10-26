@@ -16,7 +16,6 @@ import javax.annotation.PreDestroy
 import javax.enterprise.context.ApplicationScoped
 import javax.enterprise.inject.Default
 import javax.inject.Inject
-import kotlin.concurrent.thread
 
 
 /**
@@ -52,7 +51,6 @@ class EventConsumerUC : IEventConsumerUC {
     @field: Default
     lateinit var saveEventMessage: ISaveEventMessage
 
-
     private lateinit var consumer: KafkaConsumer<String, EventRequest>
 
     /**
@@ -70,6 +68,11 @@ class EventConsumerUC : IEventConsumerUC {
 
     @PreDestroy
     fun preDestroy() {
+        logger.info { "In preDestroy" }
+        consumer.close()
+    }
+
+    override fun shutdown() {
         consumer.close()
     }
 
@@ -78,14 +81,12 @@ class EventConsumerUC : IEventConsumerUC {
      */
     override fun consumeMessage() {
         consumer.subscribe(listOf(config.kafkaTopic))
-        thread {
-            while (true) {
-                val records = consumer.poll(Duration.ofSeconds(1))
-                records.iterator().forEach {
-                    saveEventMessage.saveEventMessage(it.value())
-                }
+        while (true) {
+            val records = consumer.poll(Duration.ofSeconds(1))
+            records.iterator().forEach {
+                saveEventMessage.saveEventMessage(it.value())
             }
-        }.join()
+        }
     }
 
 }
